@@ -4,9 +4,9 @@ var task1 = {
 	render: function(){
 		document.getElementById("screenX").textContent = window.screenX;
 		document.getElementById("screenY").textContent = window.screenY;
-		document.getElementById("screenWidth").textContent = window.screen.width;
-		document.getElementById("screenHeight").textContent = window.screen.height;
-		document.getElementById("location").textContent = window.location;
+		document.getElementById("screenWidth").textContent = window.InnerWidth;
+		document.getElementById("screenHeight").textContent = window.InnerHeight;
+		document.getElementById("location").textContent = window.location.pathname;
 	},
 	resize: function() { 
 		window.addEventListener("resize", this.render);
