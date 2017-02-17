@@ -21,4 +21,5 @@ var task1 = {
 task1.render();
 task1.resize();
 task.devInfo();
+
 })();
